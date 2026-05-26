@@ -1,0 +1,2917 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>دليل الاستخدام - منصة دراسة</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;900&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/icon.jpg" />
+    <link rel="stylesheet" href="styleguide.css" />
+  </head>
+  <body>
+    <div id="scrollProgress"></div>
+
+    <canvas id="starsCanvas"></canvas>
+
+    <nav id="bubbleNav" aria-label="التنقل بين الأقسام"></nav>
+
+    <div id="mobileBubbleBar"></div>
+
+    <div
+      id="mobileDotNav"
+      role="navigation"
+      aria-label="التنقل بين الأقسام"
+    ></div>
+
+    <div id="mobileCarousel">
+      <div id="carouselTrack"></div>
+    </div>
+
+    <div class="page-wrap">
+      <a href="https://minasa-dirassa.vercel.app" class="back-btn">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M19 12H5M12 19l-7-7 7-7" />
+        </svg>
+        رجوع للمنصة
+      </a>
+
+      <div class="hero">
+        <div class="hero-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+            />
+          </svg>
+          دليل الاستخدام الشامل
+        </div>
+        <h1>كل ما تحتاج معرفته<br />عن <em>منصة دراسة</em></h1>
+        <p>
+          دليل تفصيلي يشرح كل قسم وأداة في المنصة، مع خطوات واضحة وأمثلة عملية
+          لتحقق أقصى استفادة من رفيقك الدراسي.
+        </p>
+        <div class="hero-line"></div>
+      </div>
+
+      <div class="toc">
+        <div class="toc-title">
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="8" y1="6" x2="21" y2="6" />
+            <line x1="8" y1="12" x2="21" y2="12" />
+            <line x1="8" y1="18" x2="21" y2="18" />
+            <line x1="3" y1="6" x2="3.01" y2="6" />
+            <line x1="3" y1="12" x2="3.01" y2="12" />
+            <line x1="3" y1="18" x2="3.01" y2="18" />
+          </svg>
+          فهرس المحتويات
+        </div>
+        <div class="toc-grid">
+          <a class="toc-item" href="#sec-why">
+            <span class="toc-icon"
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#f59e0b"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                <line x1="12" y1="17" x2="12.01" y2="17" /></svg
+            ></span>
+            لماذا منصة دراسة؟
+          </a>
+          <a
+            class="toc-item"
+            href="#"
+            onclick="
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+              return false;
+            "
+          >
+            <span class="toc-icon"
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#8b5cf6"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="8" y1="6" x2="21" y2="6" />
+                <line x1="8" y1="12" x2="21" y2="12" />
+                <line x1="8" y1="18" x2="21" y2="18" />
+                <line x1="3" y1="6" x2="3.01" y2="6" />
+                <line x1="3" y1="12" x2="3.01" y2="12" />
+                <line x1="3" y1="18" x2="3.01" y2="18" /></svg
+            ></span>
+            فهرس المحتويات
+          </a>
+          <a class="toc-item" href="#sec-account">
+            <span class="toc-icon"
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#3b82f6"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="11" width="18" height="11" rx="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg
+            ></span>
+            الحساب والدخول
+          </a>
+          <a class="toc-item" href="#sec-schedule">
+            <span class="toc-icon"
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#06b6d4"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" /></svg
+            ></span>
+            الجدول الدراسي
+          </a>
+          <a class="toc-item" href="#sec-tasks">
+            <span class="toc-icon"
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#10b981"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M9 11l3 3L22 4" />
+                <path
+                  d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+                /></svg
+            ></span>
+            المهام والأولويات
+          </a>
+          <a class="toc-item" href="#sec-pomo">
+            <span class="toc-icon"
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#f43f5e"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" /></svg
+            ></span>
+            مؤقت بومودورو
+          </a>
+          <a class="toc-item" href="#sec-notes">
+            <span class="toc-icon"
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#f59e0b"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+                <polyline points="10 9 9 9 8 9" /></svg
+            ></span>
+            الملاحظات
+          </a>
+          <a class="toc-item" href="#sec-stats">
+            <span class="toc-icon"
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#8b5cf6"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="18" y1="20" x2="18" y2="10" />
+                <line x1="12" y1="20" x2="12" y2="4" />
+                <line x1="6" y1="20" x2="6" y2="14" /></svg
+            ></span>
+            الإحصائيات
+          </a>
+          <a class="toc-item" href="#sec-grades">
+            <span class="toc-icon"
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#14b8a6"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="8" r="6" />
+                <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11" /></svg
+            ></span>
+            تتبع الدرجات
+          </a>
+          <a class="toc-item" href="#sec-exams">
+            <span class="toc-icon"
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ec4899"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+                <path
+                  d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"
+                /></svg
+            ></span>
+            مواعيد الفروض
+          </a>
+          <a class="toc-item" href="#sec-resources">
+            <span class="toc-icon"
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#06b6d4"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+                />
+                <path
+                  d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                /></svg
+            ></span>
+            الموارد
+          </a>
+          <a class="toc-item" href="#sec-focus">
+            <span class="toc-icon"
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#f43f5e"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <circle cx="12" cy="12" r="6" />
+                <circle cx="12" cy="12" r="2" /></svg
+            ></span>
+            وضع التركيز
+          </a>
+          <a class="toc-item" href="#sec-search">
+            <span class="toc-icon"
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#3b82f6"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" /></svg
+            ></span>
+            البحث السريع
+          </a>
+          <a class="toc-item" href="#sec-privacy">
+            <span class="toc-icon"
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#10b981"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg
+            ></span>
+            الخصوصية والأمان
+          </a>
+          <a class="toc-item" href="#sec-settings">
+            <span class="toc-icon"
+              ><svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#8b5cf6"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+                /></svg
+            ></span>
+            الإعدادات
+          </a>
+        </div>
+      </div>
+
+      <div id="sec-toc-guide" style="scroll-margin-top: 28px"></div>
+
+      <div class="section" id="sec-why">
+        <div class="section-header">
+          <div class="section-icon amber">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#fcd34d"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+              <line x1="12" y1="17" x2="12.01" y2="17" />
+            </svg>
+          </div>
+          <div class="section-title-wrap">
+            <div class="section-num">مقدمة</div>
+            <div class="section-title">لماذا منصة دراسة؟</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">مشكلة الطالب اليوم</div>
+              <div class="feature-desc">
+                كثير من الطلاب يعانون من تشتت المعلومات — الجدول في ورقة، المهام
+                في تطبيق، الملاحظات في دفتر، والدرجات في رأسهم. هذا التشتت
+                يُضيّع الوقت ويزيد القلق قبل الامتحانات.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">الحل: كل شيء في مكان واحد</div>
+              <div class="feature-desc">
+                منصة دراسة تجمع <strong>الجدول الدراسي</strong>،
+                <strong>المهام اليومية</strong>، <strong>الملاحظات</strong>،
+                <strong>مؤقت بومودورو</strong>، <strong>تتبع الدرجات</strong>،
+                <strong>مواعيد الفروض</strong>، و<strong
+                  >الموارد التعليمية</strong
+                >
+                — كلها في منصة واحدة متكاملة ومتزامنة عبر أجهزتك.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="11" width="18" height="11" rx="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">بياناتك محفوظة في السحابة</div>
+              <div class="feature-desc">
+                على عكس التطبيقات المحلية، بياناتك محفوظة في قاعدة بيانات سحابية
+                آمنة (Supabase). يمكنك الوصول إليها من أي جهاز أو متصفح بمجرد
+                تسجيل الدخول — لا تخسر شيئاً عند تغيير الجهاز.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">تساعدك في إيش بالضبط؟</div>
+              <div class="feature-desc">
+                ✅ <strong>توفير الوقت</strong> — لا تضيع دقائق تبحث عن معلومة
+                موزعة.<br />
+                ✅ <strong>تقليل النسيان</strong> — تنبيهات تلقائية للفروض
+                والمهام.<br />
+                ✅ <strong>تحسين الأداء</strong> — تتبع وقت دراستك
+                وإحصائياتك.<br />
+                ✅ <strong>التركيز الحقيقي</strong> — مؤقت بومودورو يساعدك تدرس
+                بكفاءة أعلى.<br />
+                ✅ <strong>وضوح صورتك الدراسية</strong> — درجاتك ومقارناتها دفعة
+                واحدة.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tip">
+          <div class="tip-icon">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#60a5fa"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="16" x2="12" y2="12" />
+              <line x1="12" y1="8" x2="12.01" y2="8" />
+            </svg>
+          </div>
+          <div class="tip-text">
+            المنصة مجانية بالكامل وتعمل على الحاسوب والهاتف. لا تحتاج تثبيت أي
+            تطبيق — افتحها من المتصفح مباشرة.
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="sec-account">
+        <div class="section-header">
+          <div class="section-icon blue">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#60a5fa"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="3" y="11" width="18" height="11" rx="2" />
+              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+            </svg>
+          </div>
+          <div class="section-title-wrap">
+            <div class="section-num">القسم الأول</div>
+            <div class="section-title">الحساب وتسجيل الدخول</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="steps">
+            <div class="step">
+              <div class="step-num">1</div>
+              <div class="step-body">
+                <div class="step-title">إنشاء حساب جديد</div>
+                <div class="step-desc">
+                  من الصفحة الرئيسية اضغط <strong>حساب جديد</strong>، أدخل اسمك
+                  الكامل واسم مدرستك والبريد الإلكتروني وكلمة مرور من 6 أحرف
+                  فأكثر. ستشاهد مقياس قوة كلمة المرور أثناء الكتابة.
+                </div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <div class="step-body">
+                <div class="step-title">الدخول لحساب موجود</div>
+                <div class="step-desc">
+                  اضغط <strong>دخول للمنصة</strong>، أدخل بريدك الإلكتروني وكلمة
+                  المرور ثم اضغط Enter أو زر الدخول. المنصة تتذكرك تلقائياً في
+                  المرات القادمة.
+                </div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <div class="step-body">
+                <div class="step-title">تسجيل الخروج</div>
+                <div class="step-desc">
+                  اضغط زر <strong>خروج</strong> في الشريط العلوي. بياناتك محفوظة
+                  في السحابة وستجدها كاملة عند تسجيل الدخول مجدداً من أي جهاز.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tip">
+          <div class="tip-icon">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#60a5fa"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="16" x2="12" y2="12" />
+              <line x1="12" y1="8" x2="12.01" y2="8" />
+            </svg>
+          </div>
+          <div class="tip-text">
+            حسابك مرتبط ببريدك الإلكتروني — يمكنك تسجيل الدخول من أي جهاز أو
+            متصفح وستجد بياناتك كاملة. كل مستخدم يحتاج حساباً خاصاً به.
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="sec-schedule">
+        <div class="section-header">
+          <div class="section-icon cyan">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#67e8f9"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="3" y="4" width="18" height="18" rx="2" />
+              <line x1="16" y1="2" x2="16" y2="6" />
+              <line x1="8" y1="2" x2="8" y2="6" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+            </svg>
+          </div>
+          <div class="section-title-wrap">
+            <div class="section-num">القسم الثاني</div>
+            <div class="section-title">الجدول الدراسي التفاعلي</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="8" y1="6" x2="21" y2="6" />
+                <line x1="8" y1="12" x2="21" y2="12" />
+                <line x1="8" y1="18" x2="21" y2="18" />
+                <line x1="3" y1="6" x2="3.01" y2="6" />
+                <line x1="3" y1="12" x2="3.01" y2="12" />
+                <line x1="3" y1="18" x2="3.01" y2="18" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">كيفية ملء الجدول</div>
+              <div class="feature-desc">
+                الجدول يغطي أيام الأسبوع (الأحد–الخميس) بثماني خانات زمنية
+                يومية. اضغط على أي خانة واختر المادة من القائمة المنسدلة.
+                استراحة الظهر (12–14) محجوزة تلقائياً.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"
+                />
+                <polyline points="17 21 17 13 7 13 7 21" />
+                <polyline points="7 3 7 8 15 8" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">حفظ الجدول</div>
+              <div class="feature-desc">
+                اضغط زر <strong>حفظ الجدول</strong> بعد الانتهاء من التعديل. أي
+                تغيير تجريه يُحفظ تلقائياً لحظة تغيير القيمة أيضاً.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"
+                />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">الحصص التطبيقية</div>
+              <div class="feature-desc">
+                اضغط زر <strong>حصص تطبيقية</strong> لإضافة حصة تطبيقية مدتها
+                ساعة أو ساعتان. تُدخل المادتين اللتين تُدرَّسان خلالها وتظهر
+                بلون مميز في الجدول.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">تصدير الجدول</div>
+              <div class="feature-desc">
+                <span class="badge badge-green">PNG</span> صورة عالية الجودة
+                للجدول مناسبة لحفظها في الهاتف.<br />
+                <span class="badge badge-amber">PDF</span> ملف PDF للطباعة أو
+                المشاركة.<br />
+                <span class="badge badge-purple">طباعة</span> يفتح نافذة الطباعة
+                مباشرة.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+                <path d="M8 14h.01M12 14h.01M8 18h.01M12 18h.01" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">تبويب مواعيد الفروض</div>
+              <div class="feature-desc">
+                اضغط تبويب <strong>مواعيد الفروض</strong> لعرض جدول مخصص لتواريخ
+                الاختبارات والفروض، مستقل تماماً عن جدول الحصص العادي.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tip warn">
+          <div class="tip-icon">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#fbbf24"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+              />
+              <line x1="12" y1="9" x2="12" y2="13" />
+              <line x1="12" y1="17" x2="12.01" y2="17" />
+            </svg>
+          </div>
+          <div class="tip-text">
+            <strong>تحذير:</strong> زر "مسح الجدول" يحذف كل محتوى الجدول نهائياً
+            ولا يمكن التراجع عنه. تأكد من تصدير نسخة قبل المسح.
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="sec-tasks">
+        <div class="section-header">
+          <div class="section-icon green">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#6ee7b7"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M9 11l3 3L22 4" />
+              <path
+                d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+              />
+            </svg>
+          </div>
+          <div class="section-title-wrap">
+            <div class="section-num">القسم الثالث</div>
+            <div class="section-title">المهام اليومية والأولويات</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2.5"
+                stroke-linecap="round"
+              >
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">إضافة مهمة جديدة</div>
+              <div class="feature-desc">
+                اكتب المهمة في حقل "ماذا ستنجز اليوم؟" ثم اختر أولويتها من
+                القائمة الجانبية، ثم اضغط <strong>+</strong> أو Enter.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="8" x2="12" y2="12" />
+                <line x1="12" y1="16" x2="12.01" y2="16" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">نظام الأولويات</div>
+              <div class="feature-desc">
+                <span class="badge badge-red">عاجل</span> مهام لا تحتمل التأجيل
+                — تظهر أولاً دائماً.<br /><br />
+                <span class="badge badge-amber">مهم</span> مهام مهمة لكن لها
+                متسع من الوقت.<br /><br />
+                <span class="badge badge-cyan">عادي</span> مهام روتينية أو يمكن
+                تأجيلها.<br /><br />
+                المهام <strong>تُرتَّب تلقائياً</strong> حسب الأولوية عند
+                إضافتها.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="9 11 12 14 22 4" />
+                <path
+                  d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+                />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">إكمال وحذف المهام</div>
+              <div class="feature-desc">
+                اضغط على مربع الاختيار لتحديد المهمة كمنجزة — ستظهر بخط شطب.
+                لحذفها مرّر المؤشر فوقها وستظهر أيقونة <strong>✕</strong>.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="18" y1="20" x2="18" y2="10" />
+                <line x1="12" y1="20" x2="12" y2="4" />
+                <line x1="6" y1="20" x2="6" y2="14" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">شريط التقدم</div>
+              <div class="feature-desc">
+                فوق قائمة المهام يظهر شريط يحسب نسبة المهام المنجزة تلقائياً
+                ويعرض "X من Y مهمة مكتملة".
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="sec-pomo">
+        <div class="section-header">
+          <div class="section-icon red">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#fca5a5"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </div>
+          <div class="section-title-wrap">
+            <div class="section-num">القسم الرابع</div>
+            <div class="section-title">مؤقت بومودورو</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">ما هي تقنية بومودورو؟</div>
+              <div class="feature-desc">
+                طوّرها فرانشيسكو سيريلو في أواخر الثمانينيات، واسمها مأخوذ من
+                مؤقت طبخ على شكل طماطم استخدمه أثناء دراسته. الفكرة الجوهرية:
+                الدماغ البشري لا يستطيع التركيز الكامل لساعات متواصلة — لكنه
+                يؤدي بكفاءة عالية جداً في جلسات مركّزة قصيرة تتخللها استراحات
+                منتظمة.<br /><br />
+                الإيقاع الافتراضي في المنصة: <strong>25 دقيقة دراسة</strong> ←
+                <strong>5 دقائق استراحة</strong> × 4 جلسات ←
+                <strong>استراحة طويلة 20 دقيقة</strong>.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">لماذا تعمل هذه التقنية؟</div>
+              <div class="feature-desc">
+                <strong>تُقاوم التسويف:</strong> بدلاً من "سأدرس ساعتين"، تقول
+                لنفسك "سأدرس 25 دقيقة فقط" — وهذا أسهل بكثير للبدء.<br /><br />
+                <strong>تحمي من الإنهاك الذهني:</strong> الاستراحات المنتظمة
+                تُجدد طاقة التركيز بدلاً من استنزافها.<br /><br />
+                <strong>تُظهر إنجازك:</strong> ترى عدد الجلسات المنجزة وتشعر
+                بتقدم حقيقي ملموس، لا مجرد ساعات تمر.<br /><br />
+                <strong>تُبني عادة ثابتة:</strong> الإيقاع المتكرر يُدرّب الدماغ
+                على الدخول في حالة تركيز بسرعة أكبر مع مرور الوقت.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">كيفية الاستخدام خطوة بخطوة</div>
+              <div class="feature-desc">
+                <strong>① ابدأ الجلسة:</strong> اضغط
+                <strong>ابدأ الآن</strong> — تبدأ جلسة الدراسة وتدور العقارب.<br /><br />
+                <strong>② أثناء الجلسة:</strong> يمكنك الضغط على
+                <strong>توقف مؤقت</strong> في أي لحظة ثم
+                <strong>استئناف</strong> — الوقت المتبقي يُحفظ بدقة.<br /><br />
+                <strong>③ إعادة التهيئة:</strong> زر <strong>↺</strong> يُعيد
+                المؤقت لنقطة البداية ويُلغي الجلسة الحالية.<br /><br />
+                <strong>④ انتهاء الجلسة:</strong> يُصدر المؤقت صوت تنبيه ويومض
+                الشاشة لإعلامك بالانتقال التلقائي للاستراحة أو الجلسة التالية.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">
+                تسجيل الوقت تلقائياً في الإحصائيات
+              </div>
+              <div class="feature-desc">
+                كل ثانية تمر خلال جلسة الدراسة تُضاف فوراً لسجل اليوم في قسم
+                الإحصائيات — حتى لو أغلقت التبويب وعدت إليه لاحقاً. وقت
+                الاستراحات لا يُحتسب أبداً في الوقت المدروس. يُحفظ سجل الدراسة
+                يومياً على قاعدة البيانات كل دقيقة تلقائياً.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M19.07 4.93l-1.41 1.41M4.93 4.93l1.41 1.41M4.93 19.07l1.41-1.41M19.07 19.07l-1.41-1.41M12 2v2M12 20v2M2 12h2M20 12h2"
+                />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">فتح لوحة الإعدادات</div>
+              <div class="feature-desc">
+                اضغط أيقونة الإعدادات <strong>(⚙)</strong> في الزاوية العليا من
+                بطاقة بومودورو لفتح لوحة الإعدادات. تظهر فوق المؤقت مع تأثير
+                ضبابي. اضغط <strong>✕</strong> أو <strong>إلغاء</strong> للإغلاق
+                بدون حفظ.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">الأوقات الأربعة القابلة للتخصيص</div>
+              <div class="feature-desc">
+                <strong>وقت الدراسة</strong> — من 1 إلى 120 دقيقة. الافتراضي: 25
+                دقيقة.<br /><br />
+                <strong>الاستراحة القصيرة</strong> — من 1 إلى 60 دقيقة.
+                الافتراضي: 5 دقائق. تبدأ بعد كل جلسة دراسة.<br /><br />
+                <strong>عدد الجلسات</strong> — من 1 إلى 12 جلسة. الافتراضي: 4
+                جلسات. بعد اكتمالها تبدأ الاستراحة الطويلة.<br /><br />
+                <strong>الاستراحة الطويلة</strong> — من 1 إلى 120 دقيقة.
+                الافتراضي: 20 دقيقة. تأتي بعد إكمال دورة الجلسات كاملة.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"
+                />
+                <line x1="12" y1="9" x2="12" y2="13" />
+                <line x1="12" y1="17" x2="12.01" y2="17" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">قيود وشروط الإعدادات</div>
+              <div class="feature-desc">
+                <strong>لا يمكن تغيير الإعدادات أثناء تشغيل المؤقت</strong> —
+                يجب إيقافه أولاً. إذا حاولت والمؤقت يعمل، ستظهر رسالة خطأ تطلب
+                منك الإيقاف.<br /><br />
+                <strong>إذا كانت الجلسة في منتصفها وأوقفتها مؤقتاً</strong>،
+                يمكنك تغيير الأوقات — لكن التغيير سيُطبَّق على الجلسة
+                <em>التالية</em> فقط، والجلسة الحالية تكملها بوقتها الأصلي.<br /><br />
+                <strong>أدنى قيمة مقبولة هي دقيقة واحدة</strong> لأي حقل. أي
+                قيمة أقل تُصحَّح تلقائياً إلى 1.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">حفظ الإعدادات</div>
+              <div class="feature-desc">
+                اضغط <strong>حفظ الإعدادات</strong> لتطبيق التغييرات. تُحفظ
+                الإعدادات محلياً في المتصفح (localStorage) — تبقى حتى بعد إغلاق
+                الصفحة وتعود تلقائياً في المرة القادمة. إعدادات وقت الجلسات
+                <em>لا</em> تُزامَن بين الأجهزة.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M18 8h1a4 4 0 010 8h-1" />
+                <path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z" />
+                <line x1="6" y1="1" x2="6" y2="4" />
+                <line x1="10" y1="1" x2="10" y2="4" />
+                <line x1="14" y1="1" x2="14" y2="4" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">نظام الاستراحة ونصائحها</div>
+              <div class="feature-desc">
+                عند انتهاء جلسة الدراسة، يبدأ المؤقت تلقائياً في عدّ وقت
+                الاستراحة. تظهر رسالة إشعار تُخبرك بنوع الاستراحة (قصيرة أو
+                طويلة) وتُشجعك على الراحة الفعلية.<br /><br />
+                <strong>نصائح المنصة خلال الاستراحة القصيرة:</strong><br />
+                ابتعد عن الشاشة — قم، تمطّط، أو اشرب ماء. تجنّب التصفح لأنه
+                يُعيق استعادة التركيز.<br /><br />
+                <strong>نصائح الاستراحة الطويلة:</strong><br />
+                استرح جيداً — تناول وجبة خفيفة أو اخرج قليلاً. هذه الاستراحة
+                مكافأة حقيقية على إنجاز دورة كاملة.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">
+                التشغيل التلقائي للاستراحة والدراسة (Auto-Start)
+              </div>
+              <div class="feature-desc">
+                في لوحة الإعدادات قسم <strong>"تشغيل تلقائي"</strong> يوجد
+                خياران:<br /><br />
+                <strong>تشغيل الاستراحة تلقائياً:</strong> عند تفعيله، تبدأ
+                الاستراحة فور انتهاء جلسة الدراسة دون الحاجة للضغط على أي زر.
+                مفيد إذا كنت تريد إيقاعاً مستمراً لا تقاطع فيه.<br /><br />
+                <strong>تشغيل الدراسة تلقائياً:</strong> عند تفعيله، تبدأ الجلسة
+                التالية فور انتهاء الاستراحة تلقائياً. يُلائم من يريد ضغطاً أقل
+                على الأزرار والتركيز الكامل على الدراسة.<br /><br />
+                يمكن تفعيل أحدهما أو كليهما معاً أو تعطيلهما. الإعداد يُحفظ في
+                المتصفح ويتذكره في المرات القادمة.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M9 18V5l12-2v13" />
+                <circle cx="6" cy="18" r="3" />
+                <circle cx="18" cy="16" r="3" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">أصوات الاسترخاء الثلاثة</div>
+              <div class="feature-desc">
+                في ركن الأصوات أسفل المؤقت، ثلاثة أصوات محيطية يمكن تشغيلها في
+                أي وقت — أثناء الدراسة أو الاستراحة:<br /><br />
+                <strong>المطر</strong> — صوت هطول المطر الهادئ. يُساعد على
+                الإغراق في التركيز وإلغاء ضوضاء المحيط.<br /><br />
+                <strong>الغابة</strong> — أصوات الطبيعة وتغريد الطيور. يُعطي
+                شعوراً بالهدوء والانفصال عن ضغط الدراسة.<br /><br />
+                <strong>المقهى</strong> — ضجيج خفيف لمقهى مزدحم. فعّال علمياً
+                لبعض الناس لأن الضوضاء المحيطية المعتدلة تُحسّن الإبداع
+                والتركيز.<br /><br />
+                الضغط مرة ثانية على أي زر يوقف الصوت. يمكن تشغيل صوت واحد فقط في
+                نفس الوقت. يبدأ الصوت بشكل تدريجي (fade-in) ويتوقف بشكل تدريجي
+                (fade-out).
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">صوت دقات الساعة</div>
+              <div class="feature-desc">
+                صوت رابع مختلف في طبيعته — إيقاع دقات ساعة حقيقية يُشغَّل
+                تلقائياً <em>فقط خلال جلسات الدراسة</em> (لا يعمل أثناء
+                الاستراحة)، ويتوقف لحظة إيقاف المؤقت.<br /><br />
+                يُمكّن من
+                <strong>لوحة الإعدادات ← قسم الصوت ← دقات الساعة</strong>.
+                الإعداد افتراضياً مفعّل.<br /><br />
+                <strong>قيد مهم:</strong> لا يمكن تغيير هذا الإعداد والمؤقت يعمل
+                — يجب إيقاف المؤقت أولاً وإلا يظهر تحذير ويُعاد التبديل لحالته
+                السابقة.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M18 8h1a4 4 0 010 8h-1" />
+                <path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z" />
+                <line x1="6" y1="1" x2="6" y2="4" />
+                <line x1="10" y1="1" x2="10" y2="4" />
+                <line x1="14" y1="1" x2="14" y2="4" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">صوت نهاية الجلسة (Chime)</div>
+              <div class="feature-desc">
+                عند انتهاء أي جلسة أو استراحة، يُصدر المؤقت نغمة تنبيه قصيرة
+                مولّدة برمجياً (Web Audio API) وتومض الشاشة بلون أزرق خفيف للفت
+                انتباهك. لا يعتمد هذا الصوت على ملفات خارجية — يعمل دائماً.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9" />
+                <path d="M13.73 21a2 2 0 01-3.46 0" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">إشعارات المتصفح</div>
+              <div class="feature-desc">
+                عند أول ضغطة على <strong>ابدأ الآن</strong>، تطلب المنصة إذناً
+                لإرسال إشعارات المتصفح. اقبل هذا الإذن لأنك ستتلقى إشعاراً في كل
+                انتقال (نهاية دراسة ← استراحة، ونهاية استراحة ← دراسة) — حتى لو
+                كانت الصفحة في الخلفية أو التبويب مخفياً.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">ما الذي يمكنك تغييره في عاداتك؟</div>
+              <div class="feature-desc">
+                من خلال إعدادات بومودورو وحده يمكنك بناء نمط دراسة مخصّص تماماً
+                لك:<br /><br />
+                <strong>إذا كنت مبتدئاً:</strong> ابدأ بـ 15 دقيقة دراسة + 5
+                دقائق استراحة × 4 جلسات، ثم زد تدريجياً.<br /><br />
+                <strong>إذا كنت تحب جلسات طويلة:</strong> اضبط 50 دقيقة دراسة +
+                10 دقائق استراحة × 4.<br /><br />
+                <strong>إذا كنت تدرس لامتحان مكثّف:</strong> فعّل التشغيل
+                التلقائي للاستراحة والدراسة معاً حتى لا تقطع الإيقاع.<br /><br />
+                <strong>إذا كنت تحتاج ضغطاً:</strong> شغّل دقات الساعة مع وقت
+                جلسة أقصر — الصوت يُعزز الإحساس بالوقت المتبقي.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tip">
+          <div class="tip-icon">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#60a5fa"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M18 8h1a4 4 0 010 8h-1" />
+              <path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z" />
+              <line x1="6" y1="1" x2="6" y2="4" />
+              <line x1="10" y1="1" x2="10" y2="4" />
+              <line x1="14" y1="1" x2="14" y2="4" />
+            </svg>
+          </div>
+          <div class="tip-text">
+            اقبل إشعارات المتصفح عند طلبها أول مرة — هي الوحيدة التي تُنبهك حتى
+            لو كنت في تبويب آخر. وإذا أردت بيئة دراسة مثالية: فعّل
+            <strong>وضع التركيز</strong> + شغّل صوت <strong>المطر</strong> +
+            فعّل <strong>دقات الساعة</strong>.
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="sec-notes">
+        <div class="section-header">
+          <div class="section-icon amber">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#fcd34d"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+              />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" y1="13" x2="8" y2="13" />
+              <line x1="16" y1="17" x2="8" y2="17" />
+            </svg>
+          </div>
+          <div class="section-title-wrap">
+            <div class="section-num">القسم الخامس</div>
+            <div class="section-title">سجل الملاحظات</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                />
+                <path
+                  d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
+                />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">إضافة ملاحظة</div>
+              <div class="feature-desc">
+                اكتب ملاحظتك في الحقل — قد تكون فكرة دراسية، معلومة مهمة، أو
+                تذكير — ثم اضغط <strong>+ إضافة ملاحظة</strong> أو Enter.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="3" width="7" height="7" />
+                <rect x="14" y="3" width="7" height="7" />
+                <rect x="14" y="14" width="7" height="7" />
+                <rect x="3" y="14" width="7" height="7" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">عرض الملاحظات</div>
+              <div class="feature-desc">
+                تظهر الملاحظات كبطاقات في شبكة منظّمة. كل بطاقة تعرض التاريخ
+                والوقت الذي أضفتها فيه. مرّر المؤشر لظهور زر الحذف.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tip">
+          <div class="tip-icon">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#60a5fa"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+          </div>
+          <div class="tip-text">
+            يمكنك البحث في ملاحظاتك بسرعة باستخدام
+            <strong>البحث العالمي (Ctrl+K)</strong>.
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="sec-stats">
+        <div class="section-header">
+          <div class="section-icon purple">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#c4b5fd"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="20" x2="18" y2="10" />
+              <line x1="12" y1="20" x2="12" y2="4" />
+              <line x1="6" y1="20" x2="6" y2="14" />
+            </svg>
+          </div>
+          <div class="section-title-wrap">
+            <div class="section-num">القسم السادس</div>
+            <div class="section-title">إحصائيات الدراسة</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">بطاقات الأرقام</div>
+              <div class="feature-desc">
+                <strong>مجموع الأسبوع</strong> — إجمالي وقت دراستك هذا
+                الأسبوع.<br />
+                <strong>اليوم</strong> — وقت جلسات اليوم الحالي فقط.<br />
+                <strong>أفضل يوم</strong> — اليوم الذي درست فيه أكثر هذا
+                الأسبوع.<br />
+                <strong>أكثر مادة</strong> — المادة الأكثر حضوراً في جدولك.<br />
+                <strong>مقارنة بالأسبوع الماضي</strong> — هل تقدمت أم تراجعت؟
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">المنحنى البياني</div>
+              <div class="feature-desc">
+                يعرض آخر 14 يوماً بمنحنيين:
+                <strong>الأسبوع الحالي</strong> (أزرق مضيء) و<strong
+                  >الأسبوع الماضي</strong
+                >
+                (متقطع شاحب) للمقارنة المرئية السريعة.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">الخريطة الحرارية (Heatmap)</div>
+              <div class="feature-desc">
+                تعرض آخر <strong>182 يوماً</strong> (6 أشهر) كمربعات ملونة تتدرج
+                حسب ساعات الدراسة. مرر المؤشر على أي يوم لرؤية تفاصيله.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tip">
+          <div class="tip-icon">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#60a5fa"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+            </svg>
+          </div>
+          <div class="tip-text">
+            يظهر في <strong>لوحة الترحيب</strong> العلوية عدد أيام الدراسة
+            المتواصلة (Streak). حافظ عليها لبناء عادة دراسية ثابتة!
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="sec-grades">
+        <div class="section-header">
+          <div class="section-icon teal">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#5eead4"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="8" r="6" />
+              <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11" />
+            </svg>
+          </div>
+          <div class="section-title-wrap">
+            <div class="section-num">القسم السابع</div>
+            <div class="section-title">تتبع الدرجات</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2.5"
+                stroke-linecap="round"
+              >
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">إضافة درجة</div>
+              <div class="feature-desc">
+                اختر المادة، أدخل عنوان الاختبار (مثال: فرض الفصل الأول)، درجتك،
+                والدرجة الكاملة. ثم اضغط <strong>إضافة</strong>.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="18" y1="20" x2="18" y2="10" />
+                <line x1="12" y1="20" x2="12" y2="4" />
+                <line x1="6" y1="20" x2="6" y2="14" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">المعدل العام والتحليل</div>
+              <div class="feature-desc">
+                تُحسب درجاتك تلقائياً من 20. يظهر
+                <strong>المعدل العام</strong> لكل موادك، ويُشير النظام إلى
+                <strong>المادة الأضعف</strong> التي تحتاج مراجعة إضافية.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">الرسم البياني لكل مادة</div>
+              <div class="feature-desc">
+                لكل مادة منحنى بياني يتتبع تطور درجاتك عبر الاختبارات المتعاقبة
+                لمعرفة هل أنت في تحسن أم تراجع.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="sec-exams">
+        <div class="section-header">
+          <div class="section-icon pink">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#f9a8d4"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="3" y="4" width="18" height="18" rx="2" />
+              <line x1="16" y1="2" x2="16" y2="6" />
+              <line x1="8" y1="2" x2="8" y2="6" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+              <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01" />
+            </svg>
+          </div>
+          <div class="section-title-wrap">
+            <div class="section-num">القسم الثامن</div>
+            <div class="section-title">مواعيد الفروض والعد التنازلي</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">إضافة موعد فرض</div>
+              <div class="feature-desc">
+                اختر المادة، اكتب اسم الفرض، وحدد التاريخ. سيظهر الفرض في بطاقة
+                مع عداد تنازلي يُحدَّث يومياً تلقائياً.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="8" x2="12" y2="12" />
+                <line x1="12" y1="16" x2="12.01" y2="16" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">ألوان الإلحاح</div>
+              <div class="feature-desc">
+                <span class="badge badge-red">🔥 اليوم</span> الفرض اليوم —
+                يتحول لأحمر ويومض.<br /><br />
+                <span class="badge badge-amber">⚠️ باقي 3 أيام</span> تحذير
+                بالاقتراب.<br /><br />
+                <span class="badge badge-blue">باقي 7 أيام</span> وقت كافٍ
+                للمراجعة.<br /><br />
+                <span class="badge badge-green">باقي أكثر</span> مرتاح — راجع
+                بتأنٍّ.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+                <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">إشعارات تلقائية</div>
+              <div class="feature-desc">
+                عند الدخول للمنصة يتحقق النظام تلقائياً إذا كان هناك فرض غداً أو
+                بعد 3 أيام ويرسل <strong>إشعار المتصفح</strong> تذكيراً.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="sec-resources">
+        <div class="section-header">
+          <div class="section-icon cyan">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#67e8f9"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+              />
+              <path
+                d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+              />
+            </svg>
+          </div>
+          <div class="section-title-wrap">
+            <div class="section-num">القسم التاسع</div>
+            <div class="section-title">مكتبة الموارد والروابط</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+                />
+                <path
+                  d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">إضافة مورد</div>
+              <div class="feature-desc">
+                اختر المادة، أدخل عنواناً وصفياً (اختياري)، والصق الرابط. المنصة
+                تدعم جميع الروابط وتُميّز تلقائياً: <strong>▶️ يوتيوب</strong>،
+                <strong>📄 PDF</strong>، <strong>📁 Google Drive</strong>.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                <path
+                  d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+                />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">تنظيم بالمواد</div>
+              <div class="feature-desc">
+                الموارد تُجمَّع تلقائياً بحسب المادة مع عداد للروابط في كل مادة،
+                مما يجعل الوصول إليها سريعاً.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="sec-focus">
+        <div class="section-header">
+          <div class="section-icon red">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#fca5a5"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <circle cx="12" cy="12" r="6" />
+              <circle cx="12" cy="12" r="2" />
+            </svg>
+          </div>
+          <div class="section-title-wrap">
+            <div class="section-num">القسم العاشر</div>
+            <div class="section-title">وضع التركيز</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">ما هو وضع التركيز؟</div>
+              <div class="feature-desc">
+                يخفي كل أقسام المنصة ويبقي فقط
+                <strong>قائمة مهامك</strong> و<strong>مؤقت بومودورو</strong>،
+                مما يُقلل المشتتات البصرية خلال جلسات الدراسة.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12h8M12 8v8" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">كيفية التفعيل</div>
+              <div class="feature-desc">
+                اضغط زر <strong>وضع التركيز</strong> الموجود في أسفل الشاشة
+                (يظهر بعد تسجيل الدخول فقط). اضغط
+                <strong>✖ خروج من التركيز</strong> للعودة للعرض الكامل.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tip">
+          <div class="tip-icon">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#60a5fa"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="16" x2="12" y2="12" />
+              <line x1="12" y1="8" x2="12.01" y2="8" />
+            </svg>
+          </div>
+          <div class="tip-text">
+            الجمع بين <strong>وضع التركيز</strong> و<strong
+              >أصوات الاسترخاء</strong
+            >
+            من بومودورو يُعطي تجربة دراسة استثنائية.
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="sec-search">
+        <div class="section-header">
+          <div class="section-icon blue">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#93c5fd"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+          </div>
+          <div class="section-title-wrap">
+            <div class="section-num">القسم الحادي عشر</div>
+            <div class="section-title">البحث العالمي السريع</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">فتح البحث</div>
+              <div class="feature-desc">
+                اضغط <kbd>Ctrl</kbd> + <kbd>K</kbd> (أو اضغط زر بحث في الشريط
+                العلوي) لفتح نافذة البحث الفوري.
+              </div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">ما يمكن البحث فيه</div>
+              <div class="feature-desc">
+                البحث يشمل في آنٍ واحد:
+                <span class="badge badge-green">المهام</span>
+                <span class="badge badge-amber">الملاحظات</span>
+                <span class="badge badge-cyan">الموارد</span>
+                <span class="badge badge-red">المواعيد</span>. اضغط على أي نتيجة
+                للانتقال مباشرة لقسمها.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top: 8px">
+          <table class="shortcut-table">
+            <tr>
+              <td><kbd>Ctrl</kbd> + <kbd>K</kbd></td>
+              <td class="shortcut-desc">فتح / إغلاق البحث العالمي</td>
+            </tr>
+            <tr>
+              <td><kbd>Esc</kbd></td>
+              <td class="shortcut-desc">إغلاق البحث أو أي نافذة مفتوحة</td>
+            </tr>
+            <tr>
+              <td><kbd>↑</kbd> <kbd>↓</kbd> أو <kbd>←</kbd> <kbd>→</kbd></td>
+              <td class="shortcut-desc">التنقل بين أقسام الصفحة</td>
+            </tr>
+            <tr>
+              <td><kbd>Enter</kbd></td>
+              <td class="shortcut-desc">
+                تأكيد الإدخال في الحقول (إضافة مهمة/ملاحظة)
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="section" id="sec-privacy">
+        <div class="section-header">
+          <div class="section-icon green">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#6ee7b7"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <div class="section-title-wrap">
+            <div class="section-num">القسم الثاني عشر</div>
+            <div class="section-title">الخصوصية، الأمان، والبيانات</div>
+          </div>
+        </div>
+
+        <div class="privacy-grid" style="margin-bottom: 16px">
+          <div class="privacy-item">
+            <div class="privacy-item-icon">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#10b981"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <div class="privacy-item-title">تخزين سحابي آمن</div>
+            <div class="privacy-item-desc">
+              كل بياناتك تُحفظ في قاعدة بيانات سحابية مشفّرة عبر
+              <strong>Supabase</strong>. بياناتك معزولة تماماً عن بيانات
+              المستخدمين الآخرين بفضل نظام Row Level Security (RLS).
+            </div>
+          </div>
+          <div class="privacy-item">
+            <div class="privacy-item-icon">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#10b981"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                />
+              </svg>
+            </div>
+            <div class="privacy-item-title">مزامنة عبر الأجهزة</div>
+            <div class="privacy-item-desc">
+              بياناتك متاحة من أي جهاز أو متصفح بمجرد تسجيل الدخول. لا تقلق إذا
+              غيّرت هاتفك أو حاسوبك — كل شيء محفوظ في السحابة.
+            </div>
+          </div>
+          <div class="privacy-item">
+            <div class="privacy-item-icon">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#10b981"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="11" width="18" height="11" rx="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg>
+            </div>
+            <div class="privacy-item-title">كلمة المرور مشفّرة</div>
+            <div class="privacy-item-desc">
+              كلمة مرورك لا تُخزَّن أبداً كنص عادي — يعالجها Supabase Auth
+              بخوارزمية تشفير bcrypt المعيارية قبل الحفظ، ولا يستطيع أحد رؤيتها.
+            </div>
+          </div>
+          <div class="privacy-item">
+            <div class="privacy-item-icon">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#10b981"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+            </div>
+            <div class="privacy-item-title">البيانات محفوظة في السحابة</div>
+            <div class="privacy-item-desc">
+              جميع بياناتك محفوظة بشكل آمن في قاعدة بيانات سحابية (Supabase).
+              يمكنك الوصول إليها من أي جهاز أو متصفح بمجرد تسجيل الدخول — لا
+              تحتاج أي نسخ احتياطية يدوية.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="feature">
+            <div class="feature-dot">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#94a3b8"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"
+                />
+                <line x1="12" y1="9" x2="12" y2="13" />
+                <line x1="12" y1="17" x2="12.01" y2="17" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">لا تشارك بيانات حسابك</div>
+              <div class="feature-desc">
+                حسابك يحتوي على بياناتك الدراسية الشخصية. لا تشارك بريدك
+                الإلكتروني أو كلمة مرورك مع أحد. في حال استخدمت جهازاً مشتركاً،
+                احرص على تسجيل الخروج دائماً.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tip warn">
+          <div class="tip-icon">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#fbbf24"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+              />
+              <line x1="12" y1="9" x2="12" y2="13" />
+              <line x1="12" y1="17" x2="12.01" y2="17" />
+            </svg>
+          </div>
+          <div class="tip-text">
+            <strong>مهم:</strong> إذا نسيت كلمة مرورك، تواصل مع إدارة المنصة
+            لاسترجاع الوصول. احتفظ ببريدك الإلكتروني وكلمة مرورك في مكان آمن.
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="sec-settings">
+        <div class="section-header">
+          <div class="section-icon purple">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="color: #a78bfa"
+            >
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+              />
+            </svg>
+          </div>
+          <div class="section-title-wrap">
+            <div class="section-num">القسم الرابع عشر</div>
+            <div class="section-title" style="color: #c4b5fd">الإعدادات</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="feature">
+            <div
+              class="feature-dot"
+              style="
+                background: rgba(139, 92, 246, 0.12);
+                border-color: rgba(139, 92, 246, 0.22);
+              "
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#a78bfa"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+                />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">تخصيص المنصة حسب ذوقك</div>
+              <div class="feature-desc">
+                تتيح لك صفحة الإعدادات التحكم الكامل في مظهر المنصة وأدواتها.
+                يمكنك إظهار أو إخفاء أي عنصر من واجهة المستخدم، تغيير لون
+                المنصة، وإدارة بياناتك بكل سهولة. افتحها من
+                <strong>القائمة الجانبية ← إعدادات الموقع</strong>.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div
+            class="feature-title"
+            style="
+              margin-bottom: 18px;
+              font-family: &quot;Cairo&quot;, sans-serif;
+              font-size: 16px;
+            "
+          >
+            خيارات الإظهار والإخفاء
+          </div>
+          <div class="settings-grid">
+            <div class="settings-item">
+              <div
+                class="settings-item-icon"
+                style="
+                  background: rgba(59, 130, 246, 0.12);
+                  border-color: rgba(59, 130, 246, 0.22);
+                "
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#60a5fa"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="2" />
+                  <circle cx="12" cy="5" r="1" />
+                  <circle cx="12" cy="19" r="1" />
+                </svg>
+              </div>
+              <div class="settings-item-title">أيقونات التنقل السريع</div>
+              <div class="settings-item-desc">
+                شريط الأيقونات الجانبي على الحاسوب أو النقاط السفلية على الهاتف.
+                أظهره أو أخفه حسب تفضيلك. <strong>مفعّل بشكل افتراضي.</strong>
+              </div>
+              <span class="badge badge-blue">snav</span>
+            </div>
+
+            <div class="settings-item">
+              <div
+                class="settings-item-icon"
+                style="
+                  background: rgba(245, 158, 11, 0.12);
+                  border-color: rgba(245, 158, 11, 0.22);
+                "
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#fbbf24"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                  <line x1="12" y1="17" x2="12.01" y2="17" />
+                </svg>
+              </div>
+              <div class="settings-item-title">زر دليل الاستخدام</div>
+              <div class="settings-item-desc">
+                الزر العائم الذي يفتح هذا الدليل مباشرةً من داخل المنصة. أخفه إن
+                كنت لا تحتاجه. <strong>مفعّل بشكل افتراضي.</strong>
+              </div>
+              <span class="badge badge-amber">guide</span>
+            </div>
+
+            <div class="settings-item">
+              <div
+                class="settings-item-icon"
+                style="
+                  background: rgba(16, 185, 129, 0.12);
+                  border-color: rgba(16, 185, 129, 0.22);
+                "
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#34d399"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </div>
+              <div class="settings-item-title">زر وضع التركيز</div>
+              <div class="settings-item-desc">
+                الزر الذي يُفعّل وضع التركيز ويُخفي عناصر الواجهة الزائدة. أخفه
+                إن كنت تُفضّل تفعيله يدوياً من لوحة المفاتيح.
+              </div>
+              <span class="badge badge-green">focus</span>
+            </div>
+
+            <div class="settings-item">
+              <div
+                class="settings-item-icon"
+                style="
+                  background: rgba(236, 72, 153, 0.12);
+                  border-color: rgba(236, 72, 153, 0.22);
+                "
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#f472b6"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="13.5" cy="6.5" r=".5" fill="#f472b6" />
+                  <circle cx="17.5" cy="10.5" r=".5" fill="#f472b6" />
+                  <circle cx="8.5" cy="7.5" r=".5" fill="#f472b6" />
+                  <circle cx="6.5" cy="12.5" r=".5" fill="#f472b6" />
+                  <path
+                    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"
+                  />
+                </svg>
+              </div>
+              <div class="settings-item-title">شريط تغيير اللون</div>
+              <div class="settings-item-desc">
+                أخفِ أو أظهر شريط الثيم. يمكنك أيضاً تثبيت لون واحد وإخفاء
+                الشريط تماماً.
+              </div>
+              <span
+                class="badge"
+                style="
+                  background: rgba(236, 72, 153, 0.12);
+                  color: #f9a8d4;
+                  border: 1px solid rgba(236, 72, 153, 0.22);
+                "
+                >theme</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="feature">
+            <div
+              class="feature-dot"
+              style="
+                background: rgba(139, 92, 246, 0.1);
+                border-color: rgba(139, 92, 246, 0.2);
+              "
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#a78bfa"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="13.5" cy="6.5" r=".5" fill="#a78bfa" />
+                <circle cx="17.5" cy="10.5" r=".5" fill="#a78bfa" />
+                <circle cx="8.5" cy="7.5" r=".5" fill="#a78bfa" />
+                <circle cx="6.5" cy="12.5" r=".5" fill="#a78bfa" />
+                <path
+                  d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"
+                />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title">تغيير لون المنصة وأزرارها</div>
+              <div class="feature-desc">
+                تحتوي المنصة على <strong>5 ألوان رئيسية</strong> تُغير مظهر
+                الأزرار والتفاصيل بالكامل. اضغط على أي لون في شريط الثيم لتطبيقه
+                فوراً.
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  gap: 10px;
+                  margin-top: 16px;
+                  flex-wrap: wrap;
+                  align-items: center;
+                "
+              >
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 5px;
+                  "
+                >
+                  <div
+                    style="
+                      width: 32px;
+                      height: 32px;
+                      border-radius: 10px;
+                      background: #3b82f6;
+                      box-shadow: 0 0 14px rgba(59, 130, 246, 0.5);
+                      border: 2px solid rgba(59, 130, 246, 0.4);
+                    "
+                  ></div>
+                  <span style="font-size: 10px; color: var(--text-dim)"
+                    >أزرق</span
+                  >
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 5px;
+                  "
+                >
+                  <div
+                    style="
+                      width: 32px;
+                      height: 32px;
+                      border-radius: 10px;
+                      background: #8b5cf6;
+                      box-shadow: 0 0 14px rgba(139, 92, 246, 0.5);
+                      border: 2px solid rgba(139, 92, 246, 0.4);
+                    "
+                  ></div>
+                  <span style="font-size: 10px; color: var(--text-dim)"
+                    >بنفسجي</span
+                  >
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 5px;
+                  "
+                >
+                  <div
+                    style="
+                      width: 32px;
+                      height: 32px;
+                      border-radius: 10px;
+                      background: #10b981;
+                      box-shadow: 0 0 14px rgba(16, 185, 129, 0.5);
+                      border: 2px solid rgba(16, 185, 129, 0.4);
+                    "
+                  ></div>
+                  <span style="font-size: 10px; color: var(--text-dim)"
+                    >أخضر</span
+                  >
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 5px;
+                  "
+                >
+                  <div
+                    style="
+                      width: 32px;
+                      height: 32px;
+                      border-radius: 10px;
+                      background: #f43f5e;
+                      box-shadow: 0 0 14px rgba(244, 63, 94, 0.5);
+                      border: 2px solid rgba(244, 63, 94, 0.4);
+                    "
+                  ></div>
+                  <span style="font-size: 10px; color: var(--text-dim)"
+                    >وردي</span
+                  >
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 5px;
+                  "
+                >
+                  <div
+                    style="
+                      width: 32px;
+                      height: 32px;
+                      border-radius: 10px;
+                      background: #f59e0b;
+                      box-shadow: 0 0 14px rgba(245, 158, 11, 0.5);
+                      border: 2px solid rgba(245, 158, 11, 0.4);
+                    "
+                  ></div>
+                  <span style="font-size: 10px; color: var(--text-dim)"
+                    >ذهبي</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div
+            class="feature-title"
+            style="
+              margin-bottom: 20px;
+              font-family: &quot;Cairo&quot;, sans-serif;
+              font-size: 16px;
+            "
+          >
+            💾 النسخة الاحتياطية وإدارة البيانات
+          </div>
+
+          <div
+            class="feature"
+            style="border-bottom: 1px solid rgba(255, 255, 255, 0.06)"
+          >
+            <div
+              class="feature-dot"
+              style="
+                background: rgba(16, 185, 129, 0.1);
+                border-color: rgba(16, 185, 129, 0.2);
+              "
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#34d399"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title" style="color: #6ee7b7">
+                تحميل النسخة الاحتياطية
+              </div>
+              <div class="feature-desc" style="margin-bottom: 14px">
+                تُصدَّر <strong>جميع بياناتك</strong> — الجدول، المهام،
+                الملاحظات، الدرجات، الفروض، والروابط — في ملف
+                <strong>JSON</strong> واحد يُحفظ على جهازك. نوصي بأخذ نسخة
+                احتياطية أسبوعية.
+              </div>
+              <div class="backup-row">
+                <div class="backup-btn-demo green-v">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                  </svg>
+                  تحميل النسخة الاحتياطية
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature" style="padding-top: 18px; border-bottom: none">
+            <div
+              class="feature-dot"
+              style="
+                background: rgba(59, 130, 246, 0.1);
+                border-color: rgba(59, 130, 246, 0.2);
+              "
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#60a5fa"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="17 8 12 3 7 8" />
+                <line x1="12" y1="3" x2="12" y2="15" />
+              </svg>
+            </div>
+            <div class="feature-body">
+              <div class="feature-title" style="color: #93c5fd">
+                استيراد النسخة الاحتياطية
+              </div>
+              <div class="feature-desc" style="margin-bottom: 14px">
+                اضغط زر الاستيراد ثم اختر ملف الـ JSON الذي نزّلته سابقاً.
+                ستُستعاد جميع بياناتك فوراً. <strong>ملاحظة:</strong> الاستيراد
+                يُحلّ محل البيانات الحالية — احرص على أخذ نسخة من الوضع الحالي
+                أولاً إن احتجت.
+              </div>
+              <div class="backup-row">
+                <div class="backup-btn-demo blue-v">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="17 8 12 3 7 8" />
+                    <line x1="12" y1="3" x2="12" y2="15" />
+                  </svg>
+                  استيراد نسخة احتياطية
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tip warn" style="margin-top: 20px">
+            <div class="tip-icon">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#f59e0b"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+                />
+                <line x1="12" y1="9" x2="12" y2="13" />
+                <line x1="12" y1="17" x2="12.01" y2="17" />
+              </svg>
+            </div>
+            <div class="tip-text">
+              <strong>تذكير:</strong> البيانات محفوظة على خوادم Supabase
+              المرتبطة بحسابك. النسخة الاحتياطية تُوفّر حمايةً إضافية في حال
+              تغيير الحساب أو استخدام جهاز جديد.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="footer">
+        <p
+          style="
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text);
+            font-family: &quot;Cairo&quot;, sans-serif;
+          "
+        >
+          منصة دراسة
+          <svg
+            style="display: inline; vertical-align: middle; margin-right: 4px"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="#3b82f6"
+          >
+            <path
+              d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+            />
+          </svg>
+        </p>
+        <p>شريكك الذكي لتنظيم الوقت والتفوق الدراسي</p>
+        <p style="margin-top: 14px">
+          <a href="https://minasa-dirassa.vercel.app">
+            <svg
+              style="display: inline; vertical-align: middle; margin-left: 5px"
+              width="13"
+              height="13"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            العودة للمنصة
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <script src="scriptguide.js"></script>
+  </body>
+</html>
