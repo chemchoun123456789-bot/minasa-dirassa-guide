@@ -12,9 +12,12 @@ function initStars() {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
   stars = [];
-  createStars(280, 0.8, 0.14, 0.34, 0);
-  createStars(140, 1.6, 0.3, 0.58, 1);
-  createStars(55, 2.4, 0.5, 0.85, 2);
+  /* Reduce particle count on mobile for better performance */
+  const isMobile = window.innerWidth < 900;
+  const m = isMobile ? 0.45 : 1;
+  createStars(Math.round(280 * m), 0.8, 0.14, 0.34, 0);
+  createStars(Math.round(140 * m), 1.6, 0.3, 0.58, 1);
+  createStars(Math.round(55 * m), 2.4, 0.5, 0.85, 2);
 }
 function createStars(count, size, speed, opacity, layer) {
   for (let i = 0; i < count; i++) {
